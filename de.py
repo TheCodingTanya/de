@@ -21,15 +21,17 @@ def test():
     for i in range(10000000):
         i = i + 1
 
-def test2():
-    print('ni hao')
+# def test2():
+#     print('ni hao')
 
 # test()
 # print('加工中')
+test = print_func(test)
 test = time_func(test)
-test2 = time_func(test2)
+# test2 = print_func(test2)
+# test2 = time_func(test2)
 test()
-test2()
+# test2()
 
 # import time
 
