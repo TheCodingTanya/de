@@ -9,7 +9,12 @@ def print_func(func):
 def test():
     print('hi')
 
+def test2():
+    print('ni hao')
+
 test()
 print('加工中')
 test = print_func(test)
+test2 = print_func(test2)
 test()
+test2()
