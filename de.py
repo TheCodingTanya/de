@@ -16,7 +16,8 @@ def time_func(func):
     return inner
 
 
-
+@print_func  # 等同於 test = print_func(test) 是 syntactic suger快寫法
+@time_func # 等同於 test = time_func(test)
 def test():
     for i in range(10000000):
         i = i + 1
@@ -26,8 +27,8 @@ def test():
 
 # test()
 # print('加工中')
-test = print_func(test)
-test = time_func(test)
+# test = print_func(test)
+# test = time_func(test)
 # test2 = print_func(test2)
 # test2 = time_func(test2)
 test()
